@@ -73,8 +73,8 @@
     }
     .pill {
       background: #f5f5f5; border: 2px solid #00d96a40;
-      color: #0a2e14; font-size: 0.76rem; font-weight: 700;
-      padding: 6px 14px; border-radius: 20px;
+      color: #0a2e14; font-size: 0.95rem; font-weight: 700;
+      padding: 9px 20px; border-radius: 20px;
       box-shadow: 0 2px 8px #00d96a18;
     }
     .enf-titulo .linea {
@@ -90,9 +90,10 @@
       text-shadow: 0 0 8px #00d96a55;
     }
     .img-bloque img {
-      width: 100%; border-radius: 16px;
+      width: 82%; border-radius: 16px;
       border: 2px solid #e0ede5;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.09); display: block;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.09);
+      display: block; margin: 0 auto;
     }
 
     /* MÉTODO DE CONSUMO */
@@ -188,240 +189,411 @@
     'diabetes': {
       nombre: 'Diabetes', icono: '🩸',
       prod: 'imagenes/producto_enfer/diabetes.png',
+      prodImg: 'imagenes/productos_enfermedad/diabetes.png',
       metodo: [
-        { p: 'Eficlax', d: '1 sobre antes de la cena, beber con agua tibia o caliente.' },
-        { p: 'Alka-M', d: '1 sobre antes del almuerzo y 1 sobre antes de la cena.' },
-        { p: 'Cápsulas de Moringa', d: '3 cápsulas al día: después del desayuno, almuerzo y cena.' },
-        { p: 'Purifort', d: '3 cápsulas al día: después del desayuno, almuerzo y cena.' }
-      ]
-    },
-
-    'calculos-renales': {
-      nombre: 'Cálculos Renales', icono: '🫘',
-      prod: 'imagenes/producto_enfer/calculos_renales.png',
-      metodo: [
-        { p: 'Alka-M', d: '1 sobre antes del desayuno, 1 sobre antes del almuerzo y 1 sobre antes de la cena.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Consumir cápsulas diariamente según indicación.' },
-        { p: 'Althus', d: 'Consumo diario después de las comidas.' }
+        { p: 'Eficlax', d: '1 sobre en agua tibia a caliente, solo en las noches hasta terminar.' },
+        { p: 'Ori Cápsulas Blandas', d: '6 cápsulas al día: 2 cápsulas 15 min. antes del desayuno, 2 cápsulas 15 min. antes del almuerzo, 2 cápsulas 15 min. antes de la cena.' },
+        { p: 'Cápsulas de Moringa', d: '6 cápsulas al día: 2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: '6 cápsulas en el día: 2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena. NOTA: No consumir alimentos agresores durante el tratamiento.' }
       ]
     },
 
     'bajar-peso': {
       nombre: 'Bajar de Peso', icono: '⚖️',
-      prod: 'imagenes/producto_enfer/bajar_peso.png',
+      prod: 'imagenes/producto_enfer/bajar_de_peso.png',
+      prodImg: 'imagenes/productos_enfermedad/bajar_de_peso.png',
       metodo: [
-        { p: 'Eficlax', d: '1 sobre en agua tibia o caliente antes del desayuno.' },
-        { p: 'Alka-M', d: '1 sobre antes del almuerzo y 1 sobre antes de la cena.' },
-        { p: 'Cápsulas de Moringa', d: '3 cápsulas al día después de cada comida.' }
-      ]
-    },
-
-    'asma': {
-      nombre: 'Asma', icono: '🫁',
-      prod: 'imagenes/producto_enfer/asma.png',
-      metodo: [
-        { p: 'Amagi Café', d: '1 taza caliente antes del desayuno y 1 taza caliente antes de dormir.' },
-        { p: 'Althus', d: 'Consumir cápsulas diariamente.' },
-        { p: 'Amagi Fit', d: 'Consumo diario.' }
-      ]
-    },
-
-    'artrosis': {
-      nombre: 'Artrosis', icono: '🦴',
-      prod: 'imagenes/producto_enfer/artrosis.png',
-      metodo: [
-        { p: 'Revella', d: '1 sobre en agua tibia o caliente antes del desayuno y 1 sobre antes de dormir.' },
-        { p: 'Althus', d: 'Cápsulas al día después de las comidas.' }
-      ]
-    },
-
-    'apendicitis': {
-      nombre: 'Apendicitis', icono: '🫙',
-      prod: 'imagenes/producto_enfer/apendicitis.png',
-      metodo: [
-        { p: 'Amagi Café', d: '1 taza caliente antes del desayuno y 1 taza caliente antes de dormir.' },
-        { p: 'Alka-M', d: '1 sobre después del desayuno, 1 después del almuerzo y 1 después de la cena.' }
-      ]
-    },
-
-    'aneurisma': {
-      nombre: 'Aneurisma', icono: '🫀',
-      prod: 'imagenes/producto_enfer/aneurisma.png',
-      metodo: [
-        { p: 'Althus', d: '3 cápsulas al día: mañana, tarde y noche, después de cada comida.' },
-        { p: 'Eficlax', d: '1 sobre en agua tibia antes del desayuno.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' }
-      ]
-    },
-
-    'anemia': {
-      nombre: 'Anemia', icono: '🩸',
-      prod: 'imagenes/producto_enfer/anemia.png',
-      metodo: [
-        { p: 'Amagi Café', d: '1 taza en la mañana antes del desayuno y 1 taza en la noche antes de dormir.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' },
-        { p: 'Althus', d: 'Cápsulas al día después de las comidas.' }
-      ]
-    },
-
-    'alzheimer': {
-      nombre: 'Alzheimer', icono: '🧠',
-      prod: 'imagenes/producto_enfer/alzheimer.png',
-      metodo: [
-        { p: 'Amagi Café', d: '1 taza caliente antes del desayuno.' },
-        { p: 'Revella', d: '1 sobre en agua tibia o caliente antes del almuerzo.' },
-        { p: 'Althus', d: 'Cápsulas al día después de las comidas.' }
-      ]
-    },
-
-    'pulmones': {
-      nombre: 'Pulmones', icono: '🫁',
-      prod: 'imagenes/producto_enfer/pulmones_malos.png',
-      metodo: [
-        { p: 'Ori Cápsulas Blandas', d: '1 cápsula antes del desayuno, 1 antes del almuerzo, 1 antes de la cena y 1 antes de dormir.' },
-        { p: 'Revella', d: '1 sobre en agua tibia antes del desayuno y 1 sobre antes de dormir.' }
-      ]
-    },
-
-    'crecimiento-ninos': {
-      nombre: 'Crecimiento para Niños', icono: '👶',
-      prod: 'imagenes/producto_enfer/crecimient_niños.png',
-      metodo: [
-        { p: 'Amagi + Moringa', d: '2 sobres de Amagi con 1 cucharada de moringa. 1 taza en las mañanas y 1 en las tardes.' },
-        { p: 'Biokids Gomitas', d: '3 gomitas por día: 1 en el desayuno, 1 en el almuerzo y 1 en la cena.' }
-      ]
-    },
-
-    'estrenimiento': {
-      nombre: 'Estreñimiento', icono: '🌿',
-      prod: 'imagenes/producto_enfer/estreñimiento.png',
-      metodo: [
-        { p: 'Epiclax + Purifort', d: '1 sobre de Epiclax combinado con Purifort. Consumir en la mañana con agua tibia. Tomar entre 5 a 7 días.' }
-      ]
-    },
-
-    'acne-manchas': {
-      nombre: 'Acné y Manchas', icono: '✨',
-      prod: 'imagenes/producto_enfer/acne_manchas.png',
-      metodo: [
-        { p: 'Eficlax', d: '1 sobre en agua tibia o caliente antes del desayuno.' },
-        { p: 'Alka-M', d: '3 tabletas al día después de las comidas.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' }
-      ]
-    },
-
-    'masa-muscular': {
-      nombre: 'Masa Muscular', icono: '💪',
-      prod: 'imagenes/producto_enfer/masa_muscular.png',
-      metodo: [
-        { p: 'Revella', d: '1 sobre en agua tibia antes de entrenar o antes del desayuno.' },
-        { p: 'Amagi Café', d: '1 taza caliente antes o después del entrenamiento.' }
-      ]
-    },
-
-    'conjuntivitis': {
-      nombre: 'Conjuntivitis', icono: '👁️',
-      prod: 'imagenes/producto_enfer/conjuntivitis.png',
-      metodo: [
-        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno. Aplicar 2 gotas del aceite de moringa en el ojo afectado antes de dormir.' },
-        { p: 'Alka-M', d: '3 tabletas al día.' },
-        { p: 'Althus', d: 'Tabletas al día.' }
+        { p: 'Eficlax', d: '1 sobre en agua tibia a caliente, solo en las noches hasta terminar.' },
+        { p: 'Alka-M', d: '1 sobre antes de las ayunas en agua tibia a caliente hasta terminar.' },
+        { p: 'Metha', d: '1 sobre en agua tibia 500ml en el día o durante el ejercicio.' },
+        { p: 'Purifort', d: '3 cápsulas en el día: 1 cápsula después del desayuno, 1 cápsula después del almuerzo, 1 cápsula después de la cena. NOTA: No consumir alimentos agresores durante el tratamiento.' }
       ]
     },
 
     'gastritis': {
       nombre: 'Gastritis', icono: '🫙',
       prod: 'imagenes/producto_enfer/gastritis.png',
+      prodImg: 'imagenes/productos_enfermedad/gastritis.png',
       metodo: [
-        { p: 'Ori Cápsulas Blandas', d: '1 cápsula antes del desayuno, 1 antes del almuerzo y 1 antes de la cena.' },
-        { p: 'Alka-M', d: '1 sobre antes de las 3 comidas principales.' },
-        { p: 'Cápsulas de Moringa', d: '3 cápsulas al día después del desayuno, almuerzo y cena.' }
+        { p: 'Ori Cápsulas Blandas', d: '6 cápsulas al día: 2 cápsulas 15 min. antes del desayuno, 2 cápsulas 15 min. antes del almuerzo, 2 cápsulas 15 min. antes de la cena.' },
+        { p: 'Alka-M', d: '1 sobre después de ayunas, 1 sobre después del almuerzo, 1 sobre después de la cena.' },
+        { p: 'Xol', d: '3 spray dentro de la boca a 10:00am y 3 spray dentro de la boca a 4:00pm. NOTA: No consumir alimentos agresores durante el tratamiento.' }
       ]
     },
 
-    'dengue': {
-      nombre: 'Dengue', icono: '🦟',
-      prod: 'imagenes/producto_enfer/dengue.png',
+    'estrenimiento': {
+      nombre: 'Estreñimiento', icono: '🌿',
+      prod: 'imagenes/producto_enfer/estrenimiento.png',
+      prodImg: 'imagenes/productos_enfermedad/estrenimiento.png',
       metodo: [
-        { p: 'Althus + Revella', d: '1 sobre de cada uno. Mezclar en un litro de agua y consumir durante el día.' },
-        { p: 'Amagi Café', d: '7 sobres al día. Consumir 2 sobres cada 3 horas aproximadamente.' }
-      ]
-    },
-
-    'rejuvenece': {
-      nombre: 'Rejuvenece', icono: '🌟',
-      prod: 'imagenes/producto_enfer/rejuvenese.png',
-      metodo: [
-        { p: 'Eternal Crema', d: 'Aplicar en las noches en todas las zonas del rostro. Usar poca cantidad. Si hay sensación de ardor al inicio es normal. Los resultados se ven luego de algunos días de aplicación continua.' }
-      ]
-    },
-
-    'colicos-menstruales': {
-      nombre: 'Cólicos Menstruales', icono: '🌸',
-      prod: 'imagenes/producto_enfer/colicos_mentruales.png',
-      metodo: [
-        { p: 'Amagi Black', d: '1 taza caliente, 3 veces al día: mañana, tarde y noche.' },
-        { p: 'Althus', d: 'Cápsulas al día antes o durante los cólicos.' }
+        { p: 'Eficlax', d: 'Consumir 1 sobre los primeros 3 días y después consumir con 2 cápsulas de Purifort hasta terminar el producto. NOTA: No consumir alimentos agresores durante el tratamiento.' },
+        { p: 'Purifort', d: '2 cápsulas junto con Eficlax hasta terminar el tratamiento.' }
       ]
     },
 
     'colesterol-alto': {
       nombre: 'Colesterol Alto', icono: '💛',
       prod: 'imagenes/producto_enfer/colesterol_alto.png',
+      prodImg: 'imagenes/productos_enfermedad/colesterol_alto.png',
       metodo: [
-        { p: 'Alka-M', d: '1 sobre antes del desayuno, 1 antes del almuerzo y 1 antes de la cena.' },
-        { p: 'Eficlax', d: '1 sobre en agua tibia en las mañanas.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Cápsulas al día después de las comidas.' }
-      ]
-    },
-
-    'chagas': {
-      nombre: 'Chagas', icono: '🦠',
-      prod: 'imagenes/producto_enfer/chagas.png',
-      metodo: [
-        { p: 'Revella', d: '1 sobre en agua tibia antes del desayuno y 1 sobre antes de dormir.' },
-        { p: 'Alka-M', d: '3 tabletas al día: 1 después de cada comida.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Cápsulas diariamente.' },
-        { p: 'Althus', d: 'Cápsulas diariamente.' }
-      ]
-    },
-
-    'cataratas': {
-      nombre: 'Cataratas', icono: '👁️',
-      prod: 'imagenes/producto_enfer/cataratas.png',
-      metodo: [
-        { p: 'Eficlax', d: '1 sobre antes del desayuno y 1 sobre antes de dormir.' },
-        { p: 'Revella', d: '1 sobre en agua tibia o caliente.' },
-        { p: 'Ori Cápsulas Blandas', d: 'Aplicar 2 gotas del aceite directamente en el ojo afectado antes de dormir. Parpadear varias veces para distribuir.' }
-      ]
-    },
-
-    'rinones': {
-      nombre: 'Riñones', icono: '🫘',
-      prod: 'imagenes/producto_enfer/riñones.png',
-      metodo: [
-        { p: 'Alka-M', d: '1 sobre antes del desayuno, 1 antes del almuerzo y 1 antes de la cena.' },
-        { p: 'Vegafull', d: 'Cápsulas diariamente.' },
-        { p: 'Revitalis', d: 'Cápsulas diariamente.' }
+        { p: 'Alka-M', d: 'Consumir 1 sobre antes del desayuno, 1 sobre antes del almuerzo, 1 sobre antes de la cena.' },
+        { p: 'Eficlax', d: 'Consumir 1 sobre en las noches, solo por las noches.' },
+        { p: 'Purifort', d: 'Consumir 1 cápsula después del desayuno, 1 cápsula después del almuerzo, 1 cápsula después de la cena.' }
       ]
     },
 
     'artritis': {
       nombre: 'Artritis', icono: '🦴',
       prod: 'imagenes/producto_enfer/artritis.png',
+      prodImg: 'imagenes/productos_enfermedad/artritis.png',
       metodo: [
-        { p: 'Revella', d: '1 sobre en agua tibia o caliente antes del desayuno y 1 antes de dormir.' },
-        { p: 'Althus', d: 'Cápsulas al día después de las comidas.' },
-        { p: 'Amagi Café', d: '1 taza caliente en la mañana antes del desayuno.' }
+        { p: 'Revella', d: 'Consumir 1 sobre antes de dormir todos los días.' },
+        { p: 'Althus', d: 'Consumir 1 sobre a hrs. 10:00am todos los días.' },
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Proteína Colosal', d: 'Consumir 1 cucharita en batido o tomatodo, después de cada alimento o después del ejercicio.' },
+        { p: 'Cápsulas de Moringa', d: 'Consumir 2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' }
+      ]
+    },
+
+    'artrosis': {
+      nombre: 'Artrosis', icono: '🦴',
+      prod: 'imagenes/producto_enfer/artrosis.png',
+      prodImg: 'imagenes/productos_enfermedad/artrosis.png',
+      metodo: [
+        { p: 'Revella', d: 'Consumir 1 sobre antes de dormir todos los días.' },
+        { p: 'Althus', d: 'Consumir 1 sobre a hrs. 10:00am todos los días.' },
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Proteína Colosal', d: 'Consumir 1 cucharita en batido o tomatodo, después de cada alimento o después del ejercicio.' }
+      ]
+    },
+
+    'colicos-menstruales': {
+      nombre: 'Cólicos Menstruales', icono: '🌸',
+      prod: 'imagenes/producto_enfer/colicos_menstruales.png',
+      prodImg: 'imagenes/productos_enfermedad/colicos_menstruales.png',
+      metodo: [
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Amagi Black', d: 'Consumir 1 sobre en ayunas, 1 sobre después del almuerzo.' },
+        { p: 'Althus', d: 'Consumir 1 sobre a hrs. 10:00am todos los días y 1 sobre a hrs. 4:00pm.' }
+      ]
+    },
+
+    'acne-manchas': {
+      nombre: 'Acné y Manchas', icono: '✨',
+      prod: 'imagenes/producto_enfer/acne_y_manchas.png',
+      prodImg: 'imagenes/productos_enfermedad/acne_y_manchas.png',
+      metodo: [
+        { p: 'Eficlax', d: 'Consumir 1 sobre antes de dormir y cada 3 días aplicarse como mascarilla.' },
+        { p: 'Alka-M', d: 'Consumir 1 sobre antes de las ayunas.' },
+        { p: 'Cápsulas de Moringa', d: 'Consumir 2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: 'Consumir 2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena. No consumir alimentos agresores.' }
       ]
     },
 
     'caida-cabello': {
       nombre: 'Caída de Cabello', icono: '💆',
-      prod: 'imagenes/producto_enfer/caida_cabello.png',
+      prod: 'imagenes/producto_enfer/caida_de_cabello.png',
+      prodImg: 'imagenes/productos_enfermedad/caida_de_cabello.png',
       metodo: [
-        { p: 'Cápsulas de Moringa', d: '1 cápsula al día de moringa.' },
-        { p: 'Nutro Shampoo', d: 'Aplicar en el cabello mojado. Dejar actuar 3 a 5 minutos. Enjuagar normalmente. Usar diariamente o en días alternos.' }
+        { p: 'Revella', d: 'Consumir 1 sobre antes de dormir todos los días.' },
+        { p: 'Nutro Shampoo', d: 'Cada que te laves el cabello usa el shampoo nutro, usar la cantidad necesaria y hacer suaves masajes, dejarlo aprox. de 2 a 5 minutos y enjuagar con abundante agua.' }
+      ]
+    },
+
+    'anemia': {
+      nombre: 'Anemia', icono: '🩸',
+      prod: 'imagenes/producto_enfer/anemia.png',
+      prodImg: 'imagenes/productos_enfermedad/anemia.png',
+      metodo: [
+        { p: 'Amagi Café', d: 'Consumir 1 sobre en ayunas todos los días.' },
+        { p: 'Cápsulas de Moringa', d: 'Consumir 2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: 'Consumir 2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' }
+      ]
+    },
+
+    'asma': {
+      nombre: 'Asma', icono: '🫁',
+      prod: 'imagenes/producto_enfer/asma.png',
+      prodImg: 'imagenes/productos_enfermedad/asma.png',
+      metodo: [
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Althus', d: 'Consumir 1 sobre a hrs. 10:00am todos los días.' },
+        { p: 'Amagi Café', d: 'Consumir 1 sobre en ayunas todos los días.' }
+      ]
+    },
+
+    'dengue': {
+      nombre: 'Dengue', icono: '🦟',
+      prod: 'imagenes/producto_enfer/dengue.png',
+      prodImg: 'imagenes/productos_enfermedad/dengue.png',
+      metodo: [
+        { p: 'Althus', d: '1 sobre de Althus y 1 sobre de Revella: mezclar en un litro de agua y tomar por sorbos durante el día.' },
+        { p: 'Revella', d: 'Mezclar con Althus en un litro de agua y tomar por sorbos durante el día.' },
+        { p: 'Amagi Café', d: 'Consumir 1 sobre en ayunas, 1 sobre en almuerzo, 1 sobre en la cena.' }
+      ]
+    },
+
+    'rinones': {
+      nombre: 'Riñones', icono: '🫘',
+      prod: 'imagenes/producto_enfer/rinones.png',
+      prodImg: 'imagenes/productos_enfermedad/rinones.png',
+      metodo: [
+        { p: 'Alka-M', d: 'Consumir 1 sobre antes del desayuno y 1 sobre a hrs. 4:00pm.' },
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Vegafull', d: 'Consumir 1/2 sobre a hrs. 10:00am y 1/2 sobre a hrs. 6:00pm.' }
+      ]
+    },
+
+    'calculos-renales': {
+      nombre: 'Cálculos Renales', icono: '🫘',
+      prod: 'imagenes/producto_enfer/calculos_renales.png',
+      prodImg: 'imagenes/productos_enfermedad/calculos_renales.png',
+      metodo: [
+        { p: 'Alka-M', d: 'Consumir 1 sobre antes del desayuno y 1 sobre a hrs. 4:00pm.' },
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Cápsulas de Moringa', d: 'Consumir 2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: 'Consumir 2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' }
+      ]
+    },
+
+    'pulmones': {
+      nombre: 'Pulmones', icono: '🫁',
+      prod: 'imagenes/producto_enfer/pulmones.png',
+      prodImg: 'imagenes/productos_enfermedad/pulmones.png',
+      metodo: [
+        { p: 'Ori Cápsulas Blandas', d: 'Consumir 2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Revella', d: 'Consumir 1 sobre antes de dormir todos los días.' },
+        { p: 'Revitalis', d: 'Consumir 1 cucharita en agua tibia a caliente, 3 veces por día: después del desayuno, almuerzo y cena.' }
+      ]
+    },
+
+    'masa-muscular': {
+      nombre: 'Masa Muscular', icono: '💪',
+      prod: 'imagenes/producto_enfer/masa_muscular.png',
+      prodImg: 'imagenes/productos_enfermedad/masa_muscular.png',
+      metodo: [
+        { p: 'Revella', d: 'Consumir 1 sobre antes de dormir todos los días.' },
+        { p: 'Amagi Cappuccino', d: 'Consumir 1 sobre en ayunas y en los momentos de dolor.' },
+        { p: 'Proteína Colosal', d: 'Consumir 1 cucharita en batido o tomatodo, después de cada alimento o después del ejercicio.' }
+      ]
+    },
+
+    'rejuvenece': {
+      nombre: 'Rejuvenece', icono: '🌟',
+      prod: 'imagenes/producto_enfer/rejuvenece.png',
+      prodImg: 'imagenes/productos_enfermedad/rejuvenece.png',
+      metodo: [
+        { p: 'Eternal Crema', d: 'Usar solo por las noches (antes de dormir). Aplicarse con suaves masajes en las partes con arruga y una vez puesto apagar todas las luces, celular, luz, etc. Al día siguiente lavarse con abundante agua fría. Si trabajas en la calor, usar sombrero y protector solar de acuerdo a tu tipo de piel.' }
+      ]
+    },
+
+    'conjuntivitis': {
+      nombre: 'Conjuntivitis', icono: '👁️',
+      prod: 'imagenes/producto_enfer/conjuntivitis.png',
+      prodImg: 'imagenes/productos_enfermedad/conjuntivitis.png',
+      metodo: [
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Xol', d: 'Aplicarse una gotita en cada ojo antes de dormir, y una vez puesto no urgar celular y apagar la luz.' },
+        { p: 'Althus', d: '1 sobre a hrs. 10:00am todos los días.' }
+      ]
+    },
+
+    'chagas': {
+      nombre: 'Chagas', icono: '🦠',
+      prod: 'imagenes/producto_enfer/chagas.png',
+      prodImg: 'imagenes/productos_enfermedad/chagas.png',
+      metodo: [
+        { p: 'Revella', d: '1 sobre todas las noches, antes de dormir (en agua tibia a caliente).' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: '2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena. NOTA: No consumir alimentos agresores durante el tratamiento.' }
+      ]
+    },
+
+    'alzheimer': {
+      nombre: 'Alzheimer', icono: '🧠',
+      prod: 'imagenes/producto_enfer/alzheimer.png',
+      prodImg: 'imagenes/productos_enfermedad/alzheimer.png',
+      metodo: [
+        { p: 'Amagi Café', d: '1 sobre en ayunas todos los días.' },
+        { p: 'Revella', d: '1 sobre antes de dormir todos los días.' },
+        { p: 'Althus', d: '1 sobre a hrs. 10:00am todos los días.' }
+      ]
+    },
+
+    'aneurisma': {
+      nombre: 'Aneurisma', icono: '🫀',
+      prod: 'imagenes/producto_enfer/aneurisma.png',
+      prodImg: 'imagenes/productos_enfermedad/aneurisma.png',
+      metodo: [
+        { p: 'Althus', d: '1 sobre a hrs. 10:00am y 1 sobre a hrs. 4:00pm.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: '2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Amagi Cappuccino', d: '1 sobre en ayunas y en los momentos de dolor. NOTA: No consumir alimentos agresores durante el tratamiento.' }
+      ]
+    },
+
+    'apendicitis': {
+      nombre: 'Apendicitis', icono: '🫙',
+      prod: 'imagenes/producto_enfer/apendicitis.png',
+      prodImg: 'imagenes/productos_enfermedad/apendicitis.png',
+      metodo: [
+        { p: 'Amagi Black', d: '1 sobre del black y 1 sobre del cappuccino: consumir juntos en uno solo en ayunas hasta terminar los dos productos.' },
+        { p: 'Amagi Cappuccino', d: 'Mezclar con Amagi Black en ayunas hasta terminar los dos productos.' },
+        { p: 'Alka-M', d: '1 sobre después del desayuno, 1 sobre después del almuerzo, 1 sobre después de la cena.' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' }
+      ]
+    },
+
+    'crecimiento-ninos': {
+      nombre: 'Crecimiento para Niños', icono: '👶',
+      prod: 'imagenes/producto_enfer/crecimiento_ninos.png',
+      prodImg: 'imagenes/productos_enfermedad/crecimiento_ninos.png',
+      metodo: [
+        { p: 'Amagi Café', d: '1 sobre de amagi con 1 cápsula de moringa (sacar de su cápsula y mezclarlo).' },
+        { p: 'Biokids Gomitas', d: '3 gomitas por día: 1 antes del desayuno y 2 antes del almuerzo.' },
+        { p: 'Cápsulas de Moringa', d: '1 cápsula antes del desayuno, 1 cápsula antes del almuerzo, 1 cápsula antes de la cena.' }
+      ]
+    },
+
+    'cataratas': {
+      nombre: 'Cataratas', icono: '👁️',
+      prod: 'imagenes/producto_enfer/cataratas.png',
+      prodImg: 'imagenes/productos_enfermedad/cataratas.png',
+      metodo: [
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Xol', d: 'Aplicar una gotita directamente en el ojo afectado antes de dormir. Parpadear varias veces para distribuir.' },
+        { p: 'Althus', d: '1 sobre a hrs. 10:00am todos los días.' }
+      ]
+    },
+
+    'calambres': {
+      nombre: 'Calambres', icono: '⚡',
+      prod: 'imagenes/producto_enfer/calambres.png',
+      prodImg: 'imagenes/productos_enfermedad/calambres.png',
+      metodo: [
+        { p: 'Alka-M', d: '1 sobre antes de las ayunas.' },
+        { p: 'Revella', d: '1 sobre antes de dormir todos los días.' },
+        { p: 'Amagi Café', d: '1 sobre en ayunas todos los días.' }
+      ]
+    },
+
+    'caspa': {
+      nombre: 'Caspa', icono: '🧴',
+      prod: 'imagenes/producto_enfer/caspa.png',
+      prodImg: 'imagenes/productos_enfermedad/caspa.png',
+      metodo: [
+        { p: 'Revella', d: '1 sobre antes de dormir todos los días.' },
+        { p: 'Xol', d: 'Aplicarse como crema de peina, solo por las noches.' },
+        { p: 'Nutro Shampoo', d: 'Cada que te laves el cabello usa el shampoo nutro, usar la cantidad necesaria y hacer suaves masajes, dejarlo aprox. de 2 a 5 minutos y enjuagar con abundante agua. NOTA: Usar un solo peine, no compartir con nadie.' }
+      ]
+    },
+
+    'rinitis': {
+      nombre: 'Rinitis', icono: '🤧',
+      prod: 'imagenes/producto_enfer/rinitis.png',
+      prodImg: 'imagenes/productos_enfermedad/rinitis.png',
+      metodo: [
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Althus', d: '1 sobre a hrs. 10:00am todos los días.' },
+        { p: 'Amagi Black', d: '1 sobre en ayunas, 1 sobre después del almuerzo.' }
+      ]
+    },
+
+    'resfrio': {
+      nombre: 'Resfrío', icono: '🤒',
+      prod: 'imagenes/producto_enfer/resfrio.png',
+      prodImg: 'imagenes/productos_enfermedad/resfrio.png',
+      metodo: [
+        { p: 'Revella', d: '1 sobre de revella caliente con dos capsulitas de moringa. NOTA: Una vez consumido el producto, vas a empezar a transpirar, por lo tanto no puedes hacerte pasar con viento ni frío.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto con el sobre de Revella caliente.' }
+      ]
+    },
+
+    'quistes-miomas': {
+      nombre: 'Quistes - Miomas', icono: '🔴',
+      prod: 'imagenes/producto_enfer/quistes_miomas.png',
+      prodImg: 'imagenes/productos_enfermedad/quistes_miomas.png',
+      metodo: [
+        { p: 'Amagi Black', d: '1 sobre en ayunas, 1 sobre en el almuerzo, 1 sobre por las noches.' },
+        { p: 'Eficlax', d: '1 sobre en las noches, solo por las noches.' },
+        { p: 'Purifort', d: '2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Metha', d: '1 sobre en una taza a hrs. 10:00am y 1 sobre en una taza a hrs. 4:00pm. El agua tiene que estar de tibio a caliente.' }
+      ]
+    },
+
+    'ciatica': {
+      nombre: 'Ciática', icono: '🦵',
+      prod: 'imagenes/producto_enfer/ciatica.png',
+      prodImg: 'imagenes/productos_enfermedad/ciatica.png',
+      metodo: [
+        { p: 'Eficlax', d: '1 sobre en las noches, solo por 7 días.' },
+        { p: 'Revella', d: '1 sobre antes de dormir todos los días.' },
+        { p: 'Xol', d: 'Aplicarse 2 spray en el hombro con suaves masajes y 2 spray en la zona del dolor.' },
+        { p: 'Purifort', d: '2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' }
+      ]
+    },
+
+    'colon-irritable': {
+      nombre: 'Colon Irritable', icono: '🫁',
+      prod: 'imagenes/producto_enfer/colon_irritable.png',
+      prodImg: 'imagenes/productos_enfermedad/colon_irritable.png',
+      metodo: [
+        { p: 'Alka-M', d: '1 sobre antes de las ayunas.' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' },
+        { p: 'Amagi Black', d: '1 sobre en ayunas, 1 sobre después del almuerzo.' }
+      ]
+    },
+
+    'alergia': {
+      nombre: 'Alergia / Herpes', icono: '🌿',
+      prod: 'imagenes/producto_enfer/alergia.png',
+      prodImg: 'imagenes/productos_enfermedad/alergia.png',
+      metodo: [
+        { p: 'Amagi Café', d: '1 sobre en ayunas todos los días.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Xol', d: '3 espray bajo la lengua dos veces por día y también ponerse de forma suave en el herpes.' }
+      ]
+    },
+
+    'prolapso': {
+      nombre: 'Prolapso / Matriz', icono: '🔴',
+      prod: 'imagenes/producto_enfer/prolapso.png',
+      prodImg: 'imagenes/productos_enfermedad/prolapso.png',
+      metodo: [
+        { p: 'Amagi Black', d: '1 sobre de amagi black y 1 sobre de cappuccino: mezclar los 2 productos en una taza en ayunas.' },
+        { p: 'Amagi Cappuccino', d: 'Mezclar con Amagi Black en una taza en ayunas.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Purifort', d: '2 cápsulas después del desayuno, 2 cápsulas después del almuerzo, 2 cápsulas después de la cena.' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' }
+      ]
+    },
+
+    'acidez-estomacal': {
+      nombre: 'Acidez Estomacal', icono: '🔥',
+      prod: 'imagenes/producto_enfer/acidez_estomacal.png',
+      prodImg: 'imagenes/productos_enfermedad/acidez_estomacal.png',
+      metodo: [
+        { p: 'Alka-M', d: '1 sobre antes de las ayunas.' },
+        { p: 'Xol', d: '3 espray bajo la lengua dos veces por día.' },
+        { p: 'Ori Cápsulas Blandas', d: '2 cápsulas antes del desayuno, 2 cápsulas antes del almuerzo, 2 cápsulas antes de la cena.' }
+      ]
+    },
+
+    'anorexia': {
+      nombre: 'Anorexia', icono: '🍃',
+      prod: 'imagenes/producto_enfer/anorexia.png',
+      prodImg: 'imagenes/productos_enfermedad/anorexia.png',
+      metodo: [
+        { p: 'Revella', d: '1 sobre antes de dormir todos los días.' },
+        { p: 'Amagi Café', d: '1 sobre en ayunas todos los días.' },
+        { p: 'Cápsulas de Moringa', d: '2 cápsulas junto al desayuno, 2 cápsulas junto al almuerzo, 2 cápsulas junto a la cena.' },
+        { p: 'Proteína Colosal', d: '1 cucharita en agua tibia o en batido, después de cada alimento.' }
       ]
     },
 
@@ -464,12 +636,15 @@
       'Alka-M': 'alkam-suplemento', 'Althus': 'althus-energizante',
       'Biokids Gomitas': 'biokids-gomitas', 'Cápsulas de Moringa': 'capsulas-moringa',
       'Epiclax': 'epiclax-detox', 'Eficlax': 'epiclax-detox',
-      'Eternal Crema': 'eternal-crema', 'Harina de Moringa': 'harina-moringa',
-      'Metha': 'metha-quemador', 'Ori Cápsulas Blandas': 'oni-capsulas-blandas',
+      'Eternal Crema': 'eternal-crema', 'Crema Eternal': 'eternal-crema',
+      'Harina de Moringa': 'harina-moringa',
+      'Metha': 'metha-quemador', 'Meta': 'metha-quemador',
+      'Ori Cápsulas Blandas': 'oni-capsulas-blandas',
       'Propóleo': 'propoleo-moringa', 'Proteína Colosal': 'proteina-nutricional',
       'Purifort': 'purifort-capsulas', 'Revella': 'colageno-revella',
       'Revitalis': 'revitalis', 'Vegafull': 'vegafull',
-      'Xol': 'xol-aceite', 'Nutro Shampoo': 'nutro-shampoo',
+      'Xol': 'xol-aceite', 'Aceite Xol': 'xol-aceite',
+      'Nutro Shampoo': 'nutro-shampoo', 'Shampoo Nutro': 'nutro-shampoo',
     };
 
     const pills = enf.metodo.map(m => {
@@ -510,15 +685,21 @@
         <div class="linea"></div>
       </div>
 
+      ${enf.prod ? `
       <div class="img-bloque">
-        <div class="img-label">Productos recomendados</div>
         <img src="${enf.prod}" alt="Productos para ${enf.nombre}"/>
-      </div>
+      </div>` : ''}
 
       <div class="metodo-box">
         <div class="metodo-titulo">Método de consumo</div>
         ${items}
       </div>
+
+      ${enf.prodImg ? `
+      <div class="img-bloque" style="margin-top:20px;">
+        <div class="img-label">Productos recomendados</div>
+        <img src="${enf.prodImg}" alt="Productos para ${enf.nombre}" style="width:82%;border-radius:16px;border:2px solid #e0ede5;box-shadow:0 4px 20px rgba(0,0,0,0.09);display:block;margin:0 auto;"/>
+      </div>` : ''}
 
       <a href="catalogo.html" style="
         display:flex; align-items:center; justify-content:center; gap:12px;
