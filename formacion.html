@@ -250,7 +250,7 @@
 </head>
 <body>
 
-<header><img class="logo-text" src="imagenes/Logo.png" alt="Bioliffe"/><p style="font-size:0.75rem;letter-spacing:4px;color:#00d96a99;margin-top:4px;text-transform:uppercase;font-family:'Comfortaa',cursive;">MORINGA 100% NATURAL</p></header>
+<header><img class="logo-text" src="Logo.png" alt="Bioliffe"/><p style="font-size:0.75rem;letter-spacing:4px;color:#00d96a99;margin-top:4px;text-transform:uppercase;font-family:'Comfortaa',cursive;">MORINGA 100% NATURAL</p></header>
 <a href="index.html" class="btn-volver">◀ Volver al inicio</a>
 <div class="linea-glow"></div>
 
@@ -259,6 +259,90 @@
   <div class="seccion-titulo">
     <h2>Plan de Negocios y Beneficios</h2>
     <p class="sub">Construye tu libertad financiera con Bioliffe</p>
+  </div>
+
+  <!-- TIKTOK -->
+  <style>
+    .tiktok-wrap {
+      position: relative;
+      margin-bottom: 28px;
+      border-radius: 22px;
+      padding: 3px;
+      background: linear-gradient(90deg, #00f2ea, #ff0050, #00f2ea, #ff0050);
+      background-size: 300% 300%;
+      animation: border-move 2s linear infinite;
+    }
+    @keyframes border-move {
+      0%   { background-position: 0% 50%; }
+      100% { background-position: 300% 50%; }
+    }
+    .tiktok-inner {
+      display: flex; align-items: center; gap: 16px;
+      background: #010101;
+      border-radius: 20px;
+      padding: 20px 22px;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+    }
+    .tiktok-inner::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center, #ff005022 0%, transparent 70%);
+      animation: pulse-bg 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes pulse-bg {
+      0%   { opacity: 0.3; transform: scale(0.95); }
+      100% { opacity: 1;   transform: scale(1.05); }
+    }
+    .tiktok-icon {
+      position: relative; z-index: 2;
+      animation: icon-bounce 1s ease-in-out infinite alternate;
+      flex-shrink: 0;
+    }
+    @keyframes icon-bounce {
+      0%   { transform: scale(1) rotate(-3deg); }
+      100% { transform: scale(1.15) rotate(3deg); }
+    }
+    .tiktok-texto { position: relative; z-index: 2; text-align: left; }
+    .tiktok-toca {
+      font-size: 0.72rem; letter-spacing: 3px; font-weight: 700;
+      text-transform: uppercase; margin-bottom: 5px;
+      background: linear-gradient(90deg, #00f2ea, #ff0050);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      animation: color-shift 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes color-shift {
+      0%   { filter: brightness(1); }
+      100% { filter: brightness(1.4); }
+    }
+    .tiktok-desc {
+      color: white; font-size: 0.92rem; font-weight: 700;
+      line-height: 1.5; text-shadow: 0 0 10px #ff005066;
+    }
+    .tiktok-finger {
+      font-size: 1.6rem;
+      animation: finger-tap 0.8s ease-in-out infinite alternate;
+      margin-right: 4px;
+    }
+    @keyframes finger-tap {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-5px); }
+    }
+  </style>
+
+  <div class="tiktok-wrap">
+    <a href="https://vt.tiktok.com/ZS9dNJq8T/" target="_blank" class="tiktok-inner">
+      <div class="tiktok-icon">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
+          <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z"/>
+        </svg>
+      </div>
+      <div class="tiktok-texto">
+        <div class="tiktok-toca"><span class="tiktok-finger">👆</span> Toca para mirar</div>
+        <div class="tiktok-desc">Para saber cuáles son las <span style="color:#00f2ea;">2 maneras más eficaces</span> de ganar dinero con Bioliffe</div>
+      </div>
+    </a>
   </div>
 
   <!-- KIT DE INICIO -->
@@ -618,3 +702,4 @@
 
 </body>
 </html>
+
